@@ -1,0 +1,93 @@
+import java.util.Scanner;
+
+public class EjerciciosIF {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        // Ejercicio 1
+        System.out.print("Ingrese un número: ");
+        int num = sc.nextInt();
+
+        if (num >= 20 && num <= 50) {
+            System.out.println("Está dentro del rango.");
+        }
+
+        // Ejercicio 2
+        System.out.print("Ingrese su edad: ");
+        int edad = sc.nextInt();
+
+        if (edad >= 18) {
+            System.out.println("Puede obtener licencia de conducir.");
+        }
+
+        // Ejercicio 3
+        System.out.print("Ingrese el monto de la compra: ");
+        double compra = sc.nextDouble();
+
+        if (compra >= 300) {
+            System.out.println("Aplica un descuento del 10%.");
+        }
+
+        // Ejercicio 4
+        System.out.print("Ingrese una nota: ");
+        double nota = sc.nextDouble();
+
+        if (nota >= 17) {
+            System.out.println("Alumno destacado.");
+        }
+
+        // Ejercicio 5
+        System.out.print("Ingrese un número: ");
+        int numero = sc.nextInt();
+
+        if (numero % 3 == 0 && numero % 5 == 0) {
+            System.out.println("Es múltiplo de 3 y de 5.");
+        }
+
+        // Ejercicio 6
+        System.out.print("Ingrese la edad del participante: ");
+        edad = sc.nextInt();
+
+        if (edad >= 15 && edad <= 18) {
+            System.out.println("Puede participar.");
+        }
+
+        // Ejercicio 7
+        System.out.print("Ingrese la temperatura: ");
+        double temperatura = sc.nextDouble();
+
+        if (temperatura > 35) {
+            System.out.println("Temperatura extrema.");
+        }
+
+        // Ejercicio 8
+        System.out.print("Ingrese el sueldo: ");
+        double sueldo = sc.nextDouble();
+
+        if (sueldo > 3500) {
+            System.out.println("Pertenece al grupo de ingresos altos.");
+        }
+
+        // Ejercicio 9
+        System.out.print("Ingrese un número entero: ");
+        int n = sc.nextInt();
+
+        if ((n >= 100 && n <= 999) || (n <= -100 && n >= -999)) {
+            System.out.println("El número tiene tres cifras.");
+        }
+
+        // Ejercicio 10
+        System.out.print("Ingrese nota de Matemática: ");
+        double matematica = sc.nextDouble();
+
+        System.out.print("Ingrese nota de Comunicación: ");
+        double comunicacion = sc.nextDouble();
+
+        if (matematica >= 11 && comunicacion >= 11) {
+            System.out.println("Postulante apto.");
+        }
+
+        sc.close();
+    }
+}
